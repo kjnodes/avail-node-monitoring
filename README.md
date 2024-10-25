@@ -4,7 +4,7 @@ This project provides a monitoring solution for Avail Node services using Promet
 
 ## Enable prometheus metrics and open ports
 
-> **Note:** If your node is located on different server make sure to add `--prometheus-external` flag in your Avail node's startup command. If you're using a firewall, ensure that the corresponding ports are open to allow Prometheus to scrape the metrics. 
+> **Note:** Make sure to add `--prometheus-external` flag in your Avail node's startup command. If you're using a firewall, ensure that the corresponding ports are open to allow Prometheus to scrape the metrics. 
 
 ## Installation
 
@@ -86,7 +86,7 @@ receivers:
 
 ### 2. Configure Prometheus
 
-Set up Prometheus by specifying the `IP` address and `ports` for your node services. Modify the `YOUR_NODE_IP:COMET_PORT` and `YOUR_NODE_IP:GETH_PORT` in the configuration file:
+Set up Prometheus by specifying the `IP` address and `ports` for your node services. Modify the `YOUR_NODE_IP:PORT` in the configuration file:
 
 ```bash
 vim $HOME/avail-node-monitoring/prometheus/prometheus.yml
@@ -120,7 +120,7 @@ scrape_configs:
     metrics_path: /metrics
     static_configs:
       - targets:
-          - 192.168.0.1:9615
+          - host.docker.internal:9615
         labels:
           instance: avail
 ```
