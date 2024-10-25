@@ -144,7 +144,17 @@ Follow these steps to access and use the Avail Node Dashboard in Grafana:
 
 ## Dashboard contents
 
-TBD
+The Grafana dashboard is organized into two main sections:
+
+### 1. kjnodes Story Services
+
+Contains links to kjnodes provided services for Avail.
+
+![image](images/dashboard-kjnodes-services.png)
+
+### 2. Avail Node Metrics
+
+Displays key metrics for monitoring the health, performance, and activity of the Avail node.
 
 ## Alerting and Notifications
 
