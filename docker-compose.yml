@@ -4,7 +4,7 @@ volumes:
   alerta_db: {}
 
 networks:
-  story-monitoring:
+  avail-monitoring:
 
 services:
   prometheus:
@@ -24,8 +24,10 @@ services:
       - '--web.enable-lifecycle'
     ports:
       - 9090:9090
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     networks:
-      - story-monitoring
+      - avail-monitoring
     restart: always
 
   # default login credentials: admin/admin
@@ -39,14 +41,14 @@ services:
     ports:
       - 9999:3000
     networks:
-      - story-monitoring
+      - avail-monitoring
     restart: always
 
   alerta_db:
     image: postgres:11
     container_name: alerta_db
     networks:
-     - story-monitoring
+     - avail-monitoring
     volumes:
       - type: volume
         source: alerta_db
@@ -62,7 +64,7 @@ services:
     image: alerta/alerta-web:latest
     container_name: alerta
     networks:
-     - story-monitoring
+     - avail-monitoring
     ports:
        - 8083:8083
     depends_on:
@@ -82,7 +84,7 @@ services:
     image: prom/alertmanager:latest
     container_name: alertmanager
     networks:
-      - story-monitoring
+      - avail-monitoring
     ports:
       - 9093:9093
     volumes:
