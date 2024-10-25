@@ -144,63 +144,7 @@ Follow these steps to access and use the Avail Node Dashboard in Grafana:
 
 ## Dashboard contents
 
-The Grafana dashboard is organized into three main sections:
-
-### 1. kjnodes Avail Services
-
-Contains links to kjnodes provided services for Avail Protocol.
-
-![image](images/dashboard-kjnodes-services.png)
-
-### 2. Avail Node Metrics
-
-Displays key metrics for monitoring the health, performance, and activity of the CometBFT node.
-
-#### 2.1. System
-
-Shows system related metrics like node status, service uptime, memory and cpu usage.
-
-![image](images/dashboard-cometbft-system-metrics.png)
-
-#### 2.2. Network
-
-Network metrics like node peer connections and traffic.
-
-![image](images/dashboard-cometbft-network-metrics.png)
-
-#### 2.3. Blockchain
-
-Displays blockchain metrics like block time, blck size and information active validator set.
-
-![image](images/dashboard-cometbft-blockchain-metrics.png)
-
-### 3. Geth Node Metrics
-
-Shows metrics related to the health, resource consumption, and activity of the Geth node.
-
-#### 3.1. System
-
-Shows system related metrics like geth binary version and system resource consumption.
-
-![image](images/dashboard-geth-system-metrics.png)
-
-#### 3.2. Network
-
-Network metrics like node peer connections and traffic.
-
-![image](images/dashboard-geth-network-metrics.png)
-
-#### 3.3. Blockchain
-
-Displays blockchain metrics like block and transaction processing.
-
-![image](images/dashboard-geth-blockchain-metrics.png)
-
-#### 3.4. Database
-
-Displays database metrics like block time, blck size and information active validator set.
-
-![image](images/dashboard-geth-database-metrics.png)
+TBD
 
 ## Alerting and Notifications
 
