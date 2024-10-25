@@ -4041,8 +4041,8 @@
     ]
   },
   "timezone": "",
-  "title": "Avail Validator",
-  "uid": "availvalidator",
+  "title": "Avail Node Dashboard",
+  "uid": "availnodedashboard",
   "version": 11,
   "weekStart": ""
 }
