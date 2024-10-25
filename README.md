@@ -120,7 +120,7 @@ scrape_configs:
     metrics_path: /metrics
     static_configs:
       - targets:
-          - host.docker.internal:9615
+          - host.docker.internal:9615   # use host.docker.internal:9615 if located on the same server
         labels:
           instance: avail
 ```
