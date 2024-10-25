@@ -23,6 +23,6 @@ scrape_configs:
     metrics_path: /metrics
     static_configs:
       - targets:
-          - YOUR_NODE_IP:PORT  # for example 192.168.0.1:9615
+          - YOUR_NODE_IP:PORT  # for example host.docker.internal:9615 if located on the same server
         labels:
           instance: avail
