@@ -34,7 +34,7 @@ groups:
         description: "Instance has been down for more than 1 minute."
 
     - alert: OutOfSync
-      expr: sum(substrate_block_height{status="best"}) - sum(substrate_block_height{status="finalized"}) > 2
+      expr: sum(substrate_block_height{status="sync_target"}) - sum(substrate_block_height{status="finalized"}) > 2
       for: 5m
       labels:
         severity: critical
