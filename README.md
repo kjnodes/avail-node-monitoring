@@ -156,6 +156,24 @@ Contains links to kjnodes provided services for Avail.
 
 Displays key metrics for monitoring the health, performance, and activity of the Avail node.
 
+### 2.1. System
+
+Shows system related metrics like node type, build info, node status, service uptime.
+
+![image](images/dashboard-substrate-system-metrics.png)
+
+#### 2.2. Network
+
+Network metrics like node peer connections and traffic.
+
+![image](images/dashboard-substrate-network-metrics.png)
+
+#### 2.3. Blockchain
+
+Displays blockchain metrics like block time, block sync performance, task rate and activity, cache state and more.
+
+![image](images/dashboard-substrate-blockchain-metrics.png)
+
 ## Alerting and Notifications
 
 Alertmanager triggers alerts and sends notifications via Telegram when configured conditions are met, such as degraded block synchronization or low peers.
