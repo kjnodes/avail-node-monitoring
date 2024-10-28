@@ -17,14 +17,6 @@ groups:
       annotations:
         description: 'Block production stalled. The node has not produced any blocks in the last 5 minutes.'
 
-    - alert: NoMetricsReceived
-      expr: absent by (instance)(substrate_sync_peers) == 1
-      for: 5m
-      labels:
-        severity: critical
-      annotations:
-        description: 'No metrics have been received in the last 5 minutes.'
-
     - alert: InstanceDown
       expr: up == 0
       for: 5m
