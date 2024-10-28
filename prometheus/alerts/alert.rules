@@ -18,7 +18,7 @@ groups:
         description: 'Block production stalled. The node has not produced any blocks in the last 5 minutes.'
 
     - alert: NoMetricsReceived
-      expr: absent(substrate_sync_peers) == 1
+      expr: absent by (instance)(substrate_sync_peers) == 1
       for: 5m
       labels:
         severity: critical
@@ -34,7 +34,7 @@ groups:
         description: "Instance has been down for more than 1 minute."
 
     - alert: OutOfSync
-      expr: sum(substrate_block_height{status="sync_target"}) - sum(substrate_block_height{status="finalized"}) > 2
+      expr: sum by (instance)(substrate_block_height{status="sync_target"}) - sum by (instance)(substrate_block_height{status="finalized"}) > 2
       for: 5m
       labels:
         severity: critical
