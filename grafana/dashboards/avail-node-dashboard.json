@@ -1145,8 +1145,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "#ffffff",
-                "value": null
+                "color": "#ffffff"
               }
             ]
           },
@@ -1217,8 +1216,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "#ffffff",
-                "value": null
+                "color": "#ffffff"
               }
             ]
           },
@@ -1322,8 +1320,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -1421,8 +1418,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1520,8 +1516,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1620,8 +1615,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -1716,8 +1710,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -1816,8 +1809,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -1911,8 +1903,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -1970,8 +1961,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -2072,8 +2062,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -2129,7 +2118,7 @@
     "list": [
       {
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "avail-testnet",
           "value": "avail-testnet"
         },
@@ -2146,33 +2135,6 @@
         "query": {
           "qryType": 1,
           "query": "label_values(substrate_sub_libp2p_peers_count,instance)",
-          "refId": "PrometheusVariableQueryEditor-VariableQuery"
-        },
-        "refresh": 1,
-        "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
-        "type": "query"
-      },
-      {
-        "current": {
-          "selected": true,
-          "text": "avail_turing_network",
-          "value": "avail_turing_network"
-        },
-        "datasource": {
-          "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
-        },
-        "definition": "label_values(substrate_sub_libp2p_peers_count,chain)",
-        "hide": 0,
-        "includeAll": false,
-        "multi": false,
-        "name": "chain_id",
-        "options": [],
-        "query": {
-          "qryType": 1,
-          "query": "label_values(substrate_sub_libp2p_peers_count,chain)",
           "refId": "PrometheusVariableQueryEditor-VariableQuery"
         },
         "refresh": 1,
