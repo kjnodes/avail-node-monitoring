@@ -8,7 +8,7 @@ networks:
 services:
   prometheus:
     image: prom/prometheus:latest
-    container_name: prometheus
+    container_name: avail-prometheus
     volumes:
        - type: volume
          source: prometheus_data
@@ -33,7 +33,7 @@ services:
   grafana:
     image: grafana/grafana:latest
     env_file: ./grafana/grafana.conf
-    container_name: grafana
+    container_name: avail-grafana
     volumes:
       - ./grafana/dashboards:/var/lib/grafana/dashboards
       - ./grafana/provisioning:/etc/grafana/provisioning
@@ -45,7 +45,7 @@ services:
 
   alertmanager:
     image: prom/alertmanager:latest
-    container_name: alertmanager
+    container_name: avail-alertmanager
     networks:
       - avail-monitoring
     ports:
